@@ -23,4 +23,3 @@ python mosaic_tool.py
 画像ファイルを選ぶと編集画面がでます。マウスでモザイクを掛けたい範囲を選択してください。選択した範囲にモザイクが掛かります。
 
 Select the image file, and select the mosaic area by dragging the mouse. The mosaic will be applied to the selected area.
-
