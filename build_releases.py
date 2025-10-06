@@ -88,6 +88,19 @@ def create_executable(platform_name):
         "--distpath", bin_dir,
         "--workpath", f"build_{platform_name}",
         "--specpath", "build",
+        "--hidden-import", "TkEasyGUI",  # TkEasyGUIを明示的にインポート
+        "--hidden-import", "tkinter",    # tkinterも明示的にインポート
+        "--hidden-import", "tkinter.colorchooser",  # tkinter.colorchooserを明示的にインポート
+        "--hidden-import", "tkinter.filedialog",    # tkinter.filedialogを明示的にインポート
+        "--hidden-import", "tkinter.messagebox",    # tkinter.messageboxを明示的にインポート
+        "--hidden-import", "tkinter.ttk",           # tkinter.ttkも明示的にインポート
+        "--hidden-import", "tkinter.font",          # tkinter.fontを明示的にインポート
+        "--hidden-import", "tkinter.scrolledtext",  # tkinter.scrolledtextを明示的にインポート
+        "--collect-all", "tkinter",      # tkinterのすべてのサブモジュールを含める
+        "--hidden-import", "PIL.ImageGrab",         # PIL.ImageGrabを明示的にインポート
+        "--hidden-import", "PIL.Image",             # PIL.Imageも明示的にインポート
+        "--collect-all", "TkEasyGUI",    # TkEasyGUIのすべてのサブモジュールを含める
+        "--collect-all", "PIL",          # PILのすべてのサブモジュールを含める
         SCRIPT_PATH
     ]
     

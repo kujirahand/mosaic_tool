@@ -6,7 +6,7 @@ echo ==============================================
 
 REM PyInstallerをインストール
 echo 📦 PyInstallerをインストール中...
-pip install pyinstaller
+python -m pip install pyinstaller
 
 REM ビルドスクリプトを実行
 python build_releases.py
