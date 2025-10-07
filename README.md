@@ -30,7 +30,6 @@ Select the image file, and select the mosaic area by dragging the mouse. The mos
 
 - Windows用: `mosaic_tool_windows.zip`
 - macOS用: `mosaic_tool_macos.zip` 
-- Linux用: `mosaic_tool_linux.zip`
 
 ZIPファイルを展開して、実行ファイル（`mosaic_tool`）を実行してください。
 
